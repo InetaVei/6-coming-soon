@@ -8,6 +8,7 @@ Ka ir kaip ketiname daryti?
 - Githube'e paleisti viesai prieinama nuoroda;
 - susikurti projekto aprasa;
 - darbo uzduociu planavimas su Github projects:
+    - pasidaryti uzduociu lenta;
     - uzduoties aprasymas turi buti kiek imanoma detalesnis;
     - uztrukti turetu ne daugiau nei pusdieni;
     - pagal aprasyma, turetume galeti priimti sprendima, ar uzduotis atlikta deramai;
