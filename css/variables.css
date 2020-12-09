@@ -1,7 +1,8 @@
 :root {        /*teviskiausias imanomas css selektorius*/
    --gap: 20px;
    --big-gap: calc(2.5 * var(--gap));
-   --main-color: #03A9F3;   /*var vienintelis budas CSS iskviesti kintamaji/
+   --main-color: #03A9F3; 
+   --secondary-color: #EA1E63;  /*var vienintelis budas CSS iskviesti kintamaji/
 }
 
 
