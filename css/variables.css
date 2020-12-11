@@ -1,0 +1,12 @@
+:root {        /*teviskiausias imanomas css selektorius*/
+   --gap: 20px;
+   --big-gap: calc(2.5 * var(--gap));
+   --main-color: #03A9F3; 
+   --secondary-color: #EA1E63;  /*var vienintelis budas CSS iskviesti kintamaji/
+}
+
+
+/* gab: 20px;
+big-gab: 2.5 * gap 
+Šis failas yra CSS kintamuju (panasus siek tiek i JS)
+*/
