@@ -6,18 +6,21 @@
     .clock > .time {
         display: inline-block;
         width: 100%;
+        color: #fff;
     }
         .clock > .time > .value {
             display: inline-block;
             width: 100%;
-            font-size: 40px;
-            line-height: 40px;
+            font-size: 50px;
+            line-height: 50px;
+            font-family: 'Raleway', sans-serif;
         }
         .clock > .time > .label {
             display: inline-block;
             width: 100%;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 12px;
+            line-height: 22px;
+            text-transform: uppercase;
         }
 
 @media (max-width: 640px) {
