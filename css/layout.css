@@ -48,6 +48,7 @@ body {
     }
         .container > .row-long.columns {
             grid-template-columns: 1fr;
+            gap: 40px;
         }
             .container > .row-long.columns > .right {
                 grid-column: 1/2;
