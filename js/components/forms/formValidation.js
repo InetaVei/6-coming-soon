@@ -11,6 +11,7 @@ function formValidation() {
        submit.addEventListener('click', () => {
            event.preventDefault();
            const validationResults = [];
+           let validCount = 0;
            
            for (let input of validables) {
                 const rule = input.dataset.validation;
@@ -26,8 +27,17 @@ function formValidation() {
                     results = Validator.isValidMessage(text);
                 }
                 validationResults.push(results);
+                if (results === true) {
+                    validCount++;
+                }
            }
-           console.log(validationResults);
+
+           if (validCount === validables.length) {
+            console.log('jeigu visi true tai siunciam info i serveri');
+           } else {
+               console.log('atvaizduojame klaidas');
+               console.log(validationResults);
+           }
        })
 
    }

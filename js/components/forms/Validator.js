@@ -15,12 +15,11 @@ class Validator {
         return true;
     }
 
-
-
-    static isValidEmail( email ) {
-        return true;
+    static isValidEmail(email) {
+        const notEmptyString = Validator.notEmptyString(email);
+        if (notEmptyString !== true) return notEmptyString;
     }
-    static isValidMessage( message ) {
+    static isValidMessage(message) {
         return true;
     }
 
@@ -34,8 +33,32 @@ class Validator {
         return true;
     }
     static onlyAlphabet(text) {
+        const abc = 'abcdefghijklmnoprstuvzABCDEFGHIJKLMNOPRSTUVZ';
+        return Validator.onlyAllowedSymbols(text, abc);
+    }
+    static onlyNumbers(text) {
+        const abc = '123456789';
+        return Validator.onlyAllowedSymbols(text, abc);
+    }
+
+    static onlyAllowedSymbols(text, allowedSymbols) {
+        for (let t of text) {
+            let singleAllowedTextSymbol = false;
+            for (let a of allowedSymbols) {
+                if (a === t) {
+                    singleAllowedTextSymbol = true;
+                    break;
+                }
+            }
+            // jei bent viena text raide yra neleistina, tai radom kritine klaida
+            if (!singleAllowedTextSymbol) {
+               return `Rastas neleistinas "${t}" simbolis`;
+            }
+
+        }
         return true;
     }
+
     static onlyFirstLetterUppercase(text) {
         // 1. visas raides konvertuoti i mazasias
         let lower = text.toLowerCase();
